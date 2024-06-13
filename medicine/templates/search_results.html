@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        {% for medicine in medicines %}
+        <li>{{ medicine.name }} </li>
+        <li>{{medicine.description}}</li>
+        <li>{{medicine.price}}</li>
+        <li>{{medicine.quantity}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

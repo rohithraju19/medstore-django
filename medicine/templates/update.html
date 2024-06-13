@@ -1,0 +1,9 @@
+{% extends 'layout/app-layout.html' %}
+{% block 'content' %}
+    <h1>Update Medicine</h1>  
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" value="update" type="submit">Update</button>
+        </form>
+{% endblock %}
